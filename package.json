@@ -1,5 +1,6 @@
 {
   "name": "ng-tippy",
+  "author": "THabo Ngubane",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,6 +10,10 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "packagr": "ng-packagr -p ng-package.json"
+  },
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/Teebo/ng-tippy.git"
   },
   "private": false,
   "dependencies": {
