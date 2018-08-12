@@ -1,7 +1,7 @@
 {
   "name": "ng-tippy",
   "author": "THabo Ngubane",
-  "version": "1.0.0",
+  "version": "2.1.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,7 +12,7 @@
     "packagr": "ng-packagr -p ng-package.json"
   },
   "repository": {
-    "type":"git",
+    "type": "git",
     "url": "https://github.com/Teebo/ng-tippy.git"
   },
   "private": false,
