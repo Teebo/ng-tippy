@@ -1,6 +1,6 @@
 # NgTippy
 
-NgTippy is an ANgular wrapper directive for Tippy.js
+NgTippy is an Angular wrapper directive for Tippy.js
 
 ## Installation
 
@@ -9,9 +9,10 @@ npm i ng-tippy
 ```
 
 # Usage
+ 
+Import in app.module.ts
 
 ```
-Import in app.module.ts
 ...
 import { TippyModule } from 'ng-tippy';
 ... 
