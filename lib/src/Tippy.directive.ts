@@ -1,13 +1,14 @@
-import { Directive, Input, OnInit, ElementRef } from '@angular/core';
+import { Directive, Input, OnInit, OnDestroy, ElementRef } from '@angular/core';
 import tippy from 'tippy.js';
 import { TippyService } from './Tippy.service';
 
 @Directive({
-  /* tslint:disable-next-line */
   selector: '[appTippy]'
 })
-export class TippyDirective implements OnInit {
+export class TippyDirective implements OnInit, OnDestroy {
   @Input('tippyOptions') public tippyOptions: any;
+  tippyName = null;
+  tippyInstance = null;
 
   constructor(private el: ElementRef, private tippyDirectiveService: TippyService) {
     this.el = el;
@@ -15,7 +16,18 @@ export class TippyDirective implements OnInit {
 
   public ngOnInit() {
     const tippyInstance = tippy(this.el.nativeElement, this.tippyOptions || {}, true);
+    const { name, shouldObserveState } = this.tippyOptions;
+    this.tippyName = name;
+    this.tippyInstance = tippyInstance;
 
-    this.tippyDirectiveService.setTippyState(this.tippyOptions.name, tippyInstance.tooltips[0]);
+    if (name === undefined && shouldObserveState) {
+      throw new Error('A name is required for the tooltip');
+    } else {
+      this.tippyDirectiveService.setTippyState(this.tippyName, this.tippyInstance);
+    }
+  }
+
+  public ngOnDestroy() {
+    this.tippyDirectiveService.setTippyState(this.tippyName, this.tippyInstance);
   }
 }

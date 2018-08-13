@@ -11,6 +11,18 @@ export class AppComponent implements OnInit {
 
   title = 'app';
 
+  toolTipOptions = {
+    arrow: true,
+    name: 'MyTippy',
+    interactive: true,
+    shouldObserveState: true,
+    html: '#my-tooltip-template',
+    createPopperInstanceOnInit: true,
+    onHide: (instance) => {
+      console.log('we do this');
+    }
+  };
+
   ngOnInit(): void {
     console.log('Got in here');
     setTimeout(() => {
