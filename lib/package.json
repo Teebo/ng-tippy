@@ -1,0 +1,40 @@
+{
+  "name": "ng-tippy",
+  "author": "Thabo Ngubane <ngubanethabo.ambrose@gmail.com>",
+  "version": "2.1.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Teebo/ng-tippy.git"
+  },
+  "private": false,
+  "peerDependencies": {
+    "@angular/core": "^6.0.2",
+    "@angular/common": "^6.0.2",
+    "rxjs": "^6.0.0"
+  },
+  "keywords": [
+    "tippy",
+    "tippy.js",
+    "ng-tippy",
+    "angular-tippy",
+    "tooltips",
+    "ngx-tippy",
+    "ngx-tooltips"
+  ],
+  "bugs": {
+    "url": "https://github.com/Teebo/ng-tippy/issues"
+  },
+  "homepage": "https://github.com/Teebo/ng-tippy#readme",
+  "dependencies": {
+    "tippy.js": "^2.5.4"
+  },
+  "ngPackage": {
+    "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+    "lib": {
+      "entryFile": "public_api.ts"
+    },
+    "whitelistedNonPeerDependencies": ["tippy.js"],
+    "dest": "dist"
+  }
+}

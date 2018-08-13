@@ -1,4 +1,4 @@
-import { TippyDirective } from './tippy.directive';
+import { TippyDirective } from './Tippy.directive';
 
 describe('TippyDirective', () => {
   it('should create an instance', () => {

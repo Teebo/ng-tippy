@@ -1,4 +1,4 @@
-import { TippyModule } from './tippy.module';
+import { TippyModule } from './Tippy.module';
 
 describe('TippyModule', () => {
   let tippyModule: TippyModule;

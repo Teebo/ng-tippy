@@ -1,0 +1,43 @@
+{
+  "name": "ng-tippy",
+  "author": "Thabo Ngubane <ngubanethabo.ambrose@gmail.com>",
+  "version": "2.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Teebo/ng-tippy.git"
+  },
+  "private": false,
+  "peerDependencies": {
+    "@angular/core": "^6.0.2",
+    "@angular/common": "^6.0.2",
+    "rxjs": "^6.0.0"
+  },
+  "keywords": [
+    "tippy",
+    "tippy.js",
+    "ng-tippy",
+    "angular-tippy",
+    "tooltips",
+    "ngx-tippy",
+    "ngx-tooltips"
+  ],
+  "bugs": {
+    "url": "https://github.com/Teebo/ng-tippy/issues"
+  },
+  "homepage": "https://github.com/Teebo/ng-tippy#readme",
+  "dependencies": {
+    "tippy.js": "^2.5.4",
+    "tslib": "^1.9.0"
+  },
+  "main": "bundles/ng-tippy.umd.js",
+  "module": "fesm5/ng-tippy.js",
+  "es2015": "fesm2015/ng-tippy.js",
+  "esm5": "esm5/ng-tippy.js",
+  "esm2015": "esm2015/ng-tippy.js",
+  "fesm5": "fesm5/ng-tippy.js",
+  "fesm2015": "fesm2015/ng-tippy.js",
+  "typings": "ng-tippy.d.ts",
+  "metadata": "ng-tippy.metadata.json",
+  "sideEffects": false
+}
