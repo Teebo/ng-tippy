@@ -1,6 +1,6 @@
 {
-  "name": "ng-tippyi",
-  "author": "Thabo Ngubane",
+  "name": "ng-tippy-app",
+  "author": "Thabo Ngubane <ngubanethabo.ambrose@gmail.com>",
   "version": "2.1.1",
   "scripts": {
     "ng": "ng",
@@ -14,6 +14,22 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Teebo/ng-tippy.git"
+  },
+  "keywords": [
+    "tippy",
+    "tippy.js",
+    "ng-tippy",
+    "angular-tippy",
+    "tooltips",
+    "ngx-tippy",
+    "ngx-tooltips"
+  ],
+  "bugs": {
+    "url": "https://github.com/Teebo/ng-tippy/issues"
+  },
+  "homepage": "https://github.com/Teebo/ng-tippy#readme",
+  "dependencies": {
+    "tippy.js": "^2.5.4"
   },
   "private": false,
   "dependencies": {
