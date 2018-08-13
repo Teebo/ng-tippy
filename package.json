@@ -1,7 +1,7 @@
 {
   "name": "ng-tippy-app",
   "author": "Thabo Ngubane <ngubanethabo.ambrose@gmail.com>",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -29,10 +29,6 @@
   },
   "homepage": "https://github.com/Teebo/ng-tippy#readme",
   "dependencies": {
-    "tippy.js": "^2.5.4"
-  },
-  "private": false,
-  "dependencies": {
     "@angular/animations": "^6.0.2",
     "@angular/common": "^6.0.2",
     "@angular/compiler": "^6.0.2",
@@ -48,6 +44,7 @@
     "tippy.js": "^2.5.4",
     "zone.js": "^0.8.26"
   },
+  "private": false,
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.3",
     "@angular/cli": "~6.0.3",
