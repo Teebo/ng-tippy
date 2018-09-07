@@ -1,6 +1,6 @@
 # NgTippy
 
-NgTippy is an Angular wrapper directive for Tippy.js
+NgTippy is an Angular 6+ wrapper directive for Tippy.js
 
 ## Installation
 
