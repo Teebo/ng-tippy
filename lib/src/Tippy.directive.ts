@@ -6,28 +6,37 @@ import { TippyService } from './Tippy.service';
   selector: '[appTippy]'
 })
 export class TippyDirective implements OnInit, OnDestroy {
-  @Input('tippyOptions') public tippyOptions: any;
+  @Input('tippyOptions')
+  public tippyOptions: any;
   tippyName = null;
   tippyInstance = null;
 
-  constructor(private el: ElementRef, private tippyDirectiveService: TippyService) {
+  constructor(
+    private el: ElementRef,
+    private tippyDirectiveService: TippyService
+  ) {
     this.el = el;
   }
 
   public ngOnInit() {
-    const tippyInstance = tippy(this.el.nativeElement, this.tippyOptions || {}, true);
-    const { name, shouldObserveState } = this.tippyOptions;
-    this.tippyName = name;
+    const tippyOptions = this.tippyOptions || {};
+    const tippyInstance = tippy(this.el.nativeElement, tippyOptions, true);
     this.tippyInstance = tippyInstance;
 
-    if (name === undefined && shouldObserveState) {
+    if (tippyOptions.name === undefined && tippyOptions.shouldObserveState) {
       throw new Error('A name is required for the tooltip');
     } else {
-      this.tippyDirectiveService.setTippyState(this.tippyName, this.tippyInstance);
+      this.tippyDirectiveService.setTippyState(
+        this.tippyName,
+        this.tippyInstance
+      );
     }
   }
 
   public ngOnDestroy() {
-    this.tippyDirectiveService.setTippyState(this.tippyName, this.tippyInstance);
+    this.tippyDirectiveService.setTippyState(
+      this.tippyName,
+      this.tippyInstance
+    );
   }
 }
